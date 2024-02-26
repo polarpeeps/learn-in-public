@@ -11,150 +11,51 @@
             /* background-color: #23272F; */
             height: 100vh;
             display: flex;
-            flex-direction: column;
-            gap: 100px;
+            /* flex-direction: column; */
+            /* gap: 100px; */
             align-items: center;
-            padding: 10%;
+            /* padding: 10%; */
             justify-content: center;
-            background-color: #130f40;
-            background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+            /* background-color: #130f40; */
+            /* background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
         }
-        .container {
-  width: 250px;
-  height: 250px;
-}
+        .snippet{
+            width: 100%;
+            height: 100%;
+        }
 
-.terminal_toolbar {
-  display: flex;
-  height: 30px;
-  align-items: center;
-  padding: 0 8px;
-  box-sizing: border-box;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  background: #212121;
-  justify-content: space-between;
-}
 
-.butt {
-  display: flex;
-  align-items: center;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin-right: 5px;
-  font-size: 8px;
-  height: 12px;
-  width: 12px;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 100%;
-  background: linear-gradient(#7d7871 0%, #595953 100%);
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
-}
-
-.btn-color {
-  background: #ee411a;
-}
-
-.btn:hover {
-  cursor: pointer;
-}
-
-.btn:focus {
-  outline: none;
-}
-
-.butt--exit {
-  background: linear-gradient(#f37458 0%, #de4c12 100%);
-}
-
-.add_tab {
-  border: 1px solid #fff;
-  color: #fff;
-  padding: 0 6px;
-  border-radius: 4px 4px 0 0;
-  border-bottom: none;
-  cursor: pointer;
-}
-
-.user {
-  color: #d5d0ce;
-  margin-left: 6px;
-  font-size: 14px;
-  line-height: 15px;
-}
-
-.terminal_body {
-  background: rgba(0, 0, 0, 0.6);
-  height: calc(100% - 30px);
-  padding-top: 2px;
-  margin-top: -1px;
-  font-size: 12px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.terminal_promt {
-  display: flex;
-}
-
-.terminal_promt span {
-  margin-left: 4px;
-}
-
-.terminal_user {
-  color: #1eff8e;
-}
-
-.terminal_location {
-  color: #4878c0;
-}
-
-.terminal_bling {
-  color: #dddddd;
-}
-
-.terminal_cursor {
-  display: block;
-  height: 14px;
-  width: 5px;
-  margin-left: 10px;
-  animation: curbl 1200ms linear infinite;
-}
-
-@keyframes curbl {
-
-  0% {
-    background: #ffffff;
-  }
-
-  49% {
-    background: #ffffff;
-  }
-
-  60% {
-    background: transparent;
-  }
-
-  99% {
-    background: transparent;
-  }
-
-  100% {
-    background: #ffffff;
-  }
-}
     </style>
 </head>
 
 <body>
-    <aside class="bg-black text-white p-6 rounded-lg w-full max-w-lg font-mono">
+    <div class="  bg-black text-white p-6  font-mono snippet" >
+        <div class="flex justify-between items-center">
+            <div class="flex space-x-2 text-red-500">
+                <div class="w-6 h-6 rounded-full bg-red-500"></div>
+                <div class="w-6 h-6 rounded-full bg-yellow-500"></div>
+                <div class="w-6 h-6 rounded-full bg-green-500"></div>
+            </div>
+            <p class="text-3xl">nabeel</p>
+        </div>
+        <div class="mt-4 text-3xl" >
+            <!-- <p class="text-green-400">$ npm install next</p> -->
+            <p class="text-green-400">DAY-9 & 10</p>
+            <h1 class=" mt-4 text-green-400 text-6xl" >$ Weather Application</h1>
+            
+            <!-- <p class="text-white">+ next@10.2.3</p> -->
+            <!-- <p class="text-white">Transpilers in JavaScript (JS) refer to tools or programs that convert source code from one programming language version to another, typically a higher or lower version. </p>
+            <p class="text-white"></p> -->
+            <!-- <p class="text-green-400">$ npm install --save express-validator</p> -->
+            <!-- <h1 class="text-green-400" style="font-size: x-large;">$ How do Transpilers work?</h1> -->
+            
+            <!-- <p class="text-white">+ next@10.2.3</p>
+            <p class="text-white">Transpilers work by parsing the code written
+                 in the source language and generating equivalent code in the target language. The process of parsing involves breaking down the code into its individual components, such as variables, functions
+                , and control structures, and then reassembling them into the target language.</p> -->
+        </div>
+    </div>
+    <!-- <div class="bg-black text-white p-6 rounded-xl w-full max-w-xl font-mono" >
         <div class="flex justify-between items-center">
             <div class="flex space-x-2 text-red-500">
                 <div class="w-3 h-3 rounded-full bg-red-500"></div>
@@ -163,25 +64,17 @@
             </div>
             <p class="text-sm">nabeel</p>
         </div>
-        <div class="mt-4">
-            <!-- <p class="text-green-400">$ npm install next</p> -->
+        <div class="mt-4" >
+        
             <p class="text-green-400">DAY-5</p>
-            <h1 class="text-green-400" style="font-size: x-large;">$ What is Express Validator?</h1>
+            <h1 class="text-green-400" style="font-size: x-large;">$ How do Transpilers work?</h1>
+            <p class="text-white">Transpilers work by parsing the code written
+                 in the source language and generating equivalent code in the target language. The process of parsing involves breaking down the code into its individual components, such as variables, functions
+                , and control structures, and then reassembling them into the target language.</p>
+            <p class="text-white"></p>
             
-            <!-- <p class="text-white">+ next@10.2.3</p> -->
-            <p class="text-white">express-validator is a package
-               that supports data validation and can be used to integrate with the NodeJS express framework to validate API request parameters. </p>
-            <!-- <p class="text-white">- Backend development </p>
-            <p class="text-white">&nbsp; &nbsp; - Reset password workflow </p> -->
-            
-            <!-- <p class="text-white">&nbsp; &nbsp; Frontend- HTML,CSS, JAVASCRIPT.</p>
-            <p class="text-white">&nbsp; &nbsp; Backend- JAVASCRIPT, NODEJS, EXPRESS.</p> -->
-            <!-- <p class="text-white">added 1 package, and audited 2 packages in 3s</p> -->
-            <!-- <p class="text-white">Accomplishments:</p> -->
-            <!-- <p class="text-white">&nbsp; &nbsp;-created fully functioning website to generate &nbsp; &nbsp; &nbsp; QR-Codes</p> -->
-            <p class="text-green-400">$ npm install --save express-validator</p>
         </div>
-    </aside>
+    </div> -->
     <!-- <div class="container">
         <div class="terminal_toolbar">
             <div class="butt">
